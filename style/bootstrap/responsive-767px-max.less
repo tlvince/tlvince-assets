@@ -168,3 +168,20 @@
   }
 
 }
+
+@media (max-width: 460px) {
+  footer {
+    span, nav ul {
+      float: none;
+    }
+  }
+  // Override
+  @baseFontSize: 14px;
+  @import "headers.less";
+}
+
+@media (max-width: 320px) {
+  // Override
+  @baseFontSize: 12px;
+  @import "headers.less";
+}
