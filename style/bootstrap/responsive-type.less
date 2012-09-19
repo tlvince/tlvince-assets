@@ -1,13 +1,20 @@
-p, pre, code, small, blockquote p, li {
+p, blockquote p, li {
+  font-size: @baseFontSize;
   line-height: @baseLineHeight;
 }
 
-p, pre, code, blockquote p, li {
-  font-size: @baseFontSize;
+pre, code {
+  font-size: @baseFontSize - 2;
+  line-height: @baseLineHeight - 2;
 }
 
 small {
-  p, pre, code, blockquote p, ul, li, span {
+  p, blockquote p, ul, li, span {
     font-size: @baseFontSize - 2;
+    line-height: @baseLineHeight - 2;
+  }
+  pre, code {
+    font-size: @baseFontSize - 4;
+    line-height: @baseLineHeight - 4;
   }
 }
