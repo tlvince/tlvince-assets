@@ -1,0 +1,30 @@
+a.anchor {
+  font-size: @baseFontSize;
+}
+
+small {
+  p {
+    a.anchor {
+      font-size: @baseFontSize - 2;
+    }
+  }
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor,
+p:hover a.anchor {
+  display: inline-block;
+  margin-left: -@baseFontSize;
+  padding-right: (@baseFontSize / 2);
+}
+
+small {
+  p:hover a.anchor {
+    margin-left: -@baseFontSize - 2;
+    padding-right: (@baseFontSize / 2) - 2;
+  }
+}
