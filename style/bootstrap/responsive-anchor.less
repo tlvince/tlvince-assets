@@ -22,9 +22,7 @@ p:hover a.anchor {
   padding-right: (@baseFontSize / 2);
 }
 
-small {
-  p:hover a.anchor {
-    margin-left: -@baseFontSize - 2;
-    padding-right: (@baseFontSize / 2) - 2;
-  }
+small p:hover a.anchor,
+blockquote p:hover a.anchor {
+    display: none;
 }
