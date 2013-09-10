@@ -1,0 +1,25 @@
+a
+  &.anchor
+    display none
+    text-decoration none
+    font-weight lighter
+    font-style normal
+    position absolute
+    &:before
+      content '\00B6' // Pilcrow
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor,
+p:hover a.anchor
+  display inline-block
+  margin-left -1em
+  padding-right 0.5em
+
+blockquote p:hover a.anchor
+  display inline-block
+  margin-left -2.2em
+  padding-right 1.7em
